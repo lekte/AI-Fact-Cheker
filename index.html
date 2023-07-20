@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script id="interaxai-widget-config">
+        window.INTERAX_AI = {
+          widgetID: "ai-fact-checker",
+          ownerID: "643874fbe9f5200383b46ff3",
+        };
+      </script>
+      <script id="interaxai-widget-script" defer="defer" src="https://cdn.jsdelivr.net/gh/interaxai/cdn@v1.16.0/dist/bundle.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>AI Fact Checker</title>
 </head>
@@ -44,13 +51,10 @@
 
     <!-- Fact Check Section -->
     <section id="fact-check" class="fact-check">
-        <iframe
-  id="interaxai-widget-iframe"
-  src="https://interaxai.com/try/ai-fact-checker/643874fbe9f5200383b46ff3?variant=embed&theme=light&bg=ffffff"
-  style="width: 100%; height: 100%; border: none; overflow: hidden;"
->    
-</iframe>
         <!-- Insert your iframe code here -->
+        <interaxai-input id="input1"></interaxai-input>
+        <interaxai-submit id="submit1"></interaxai-submit>
+        <interaxai-result id="result1"></interaxai-result>
     </section>
 
     <!-- Pricing Section -->
